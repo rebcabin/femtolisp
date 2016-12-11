@@ -20,7 +20,9 @@
 #if defined(__gnu_linux__)
 #  define LINUX
 #elif defined(__APPLE__) && defined(__MACH__)
+#ifndef MACOSX
 #  define MACOSX
+#endif
 #elif defined(__OpenBSD__)
 #  define OPENBSD
 #elif defined(__FreeBSD__)

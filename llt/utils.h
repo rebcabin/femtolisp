@@ -3,7 +3,9 @@
 
 
 #if defined( __amd64__ ) || defined( _M_AMD64 )
+#ifndef ARCH_X86_64
 #  define ARCH_X86_64
+#endif
 #  define __CPU__ 686
 #elif defined( _M_IX86 )//msvs, intel, digital mars, watcom
 #  if ! defined( __386__ )
